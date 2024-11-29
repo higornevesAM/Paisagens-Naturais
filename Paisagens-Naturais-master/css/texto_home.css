@@ -1,0 +1,30 @@
+.oculto {
+    display: none;
+}
+
+.toggle-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #b300aa;
+}
+
+section.introducao {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+article {
+    margin-bottom: 20px;
+}
