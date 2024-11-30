@@ -1,0 +1,165 @@
+/* Evita conflitos com estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho e estrutura do menu */
+header {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header .cabeca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 15vh;
+}
+
+header .cabeca .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .cabeca .logo img {
+  width: 90px;
+  height: 100%;
+  object-fit: cover;
+}
+
+header .cabeca .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header .cabeca .menu .fontenav {
+  font-size: 15px;
+  color: #002395;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Conteúdo */
+section.conteudo {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  background-image: url('../assets/catedral.jpg');
+  background-size: cover;
+  align-items: start;
+}
+
+main .introducao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+main .introducao .t1 {
+  font-size: 2.4rem;
+  color: #060d2c;
+  font-weight: bold;
+  font-family: Andale Mono, monospace;
+  margin: 20px auto; 
+  text-align: center;
+}
+
+main .introducao .t2 {
+  font-size: 1rem;
+  color: #060d2c;
+  font-weight: bold;
+  font-family: Andale Mono, monospace;
+  text-align: center;
+  background-color: white;
+  border: 3px solid #E9E5E5;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  max-width: 90%; 
+  margin: 0 auto;
+}
+
+/* Belezas Naturais */
+main .belezasNaturais {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+main .belezasNaturais .imgMont,
+main .belezasNaturais .imgVale,
+main .belezasNaturais .imgProv {
+  width: 300px;
+  height: auto;
+}
+
+main .belezasNaturais .bn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Botão Saiba Mais */
+.saibamais {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.saibamais .saibamaisbut {
+  text-decoration: none;
+  color: white;
+  background-color: #002395;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Link para Turista */
+.tour-link {
+  margin: 20px auto;
+  display: block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.tour-link:hover {
+  background-color: #041e42;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+  box-sizing: border-box;
+}
